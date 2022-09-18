@@ -13,5 +13,7 @@ struct ARFeature {
 }
 
 struct ARDataSource {
-    let features: [ARFeature] = []
+    let features: [ARFeature] = [
+        ARFeature(title: "1: VideoPlayer in RealityKit", controller: Feature1_ViewController())
+    ]
 }
