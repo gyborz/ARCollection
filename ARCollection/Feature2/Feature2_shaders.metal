@@ -47,7 +47,9 @@ vertex Feature2_GeometryEffectInOut Feature2_geometryEffectVertexShader(Feature2
                                                                         constant SCNSceneBuffer& scn_frame [[buffer(0)]],
                                                                         constant Feature2_NodeBuffer& scn_node [[buffer(1)]],
                                                                         constant float4x4& u_displayTransform [[buffer(2)]],
-                                                                        constant float& u_time [[buffer(3)]]) {
+                                                                        constant float& u_time [[buffer(3)]],
+                                                                        constant float& u_waveHeight [[buffer(4)]],
+                                                                        constant float& u_waveFrequency [[buffer(5)]]) {
     Feature2_GeometryEffectInOut out;
     
     out.backgroundTextureCoords = getBackgroundCoordinate(u_displayTransform,
@@ -55,8 +57,8 @@ vertex Feature2_GeometryEffectInOut Feature2_geometryEffectVertexShader(Feature2
                                                           scn_frame.projectionTransform,
                                                           float4(in.position, 1.0));
     
-    float waveHeight = 0.25;
-    float waveFrequency = 20.0;
+    float waveHeight = u_waveHeight;
+    float waveFrequency = u_waveFrequency;
     
     float len = length(in.position.xy);
     

@@ -33,16 +33,16 @@ class PlaneNode: NSObject {
         geometryNode.eulerAngles = SCNVector3(-Float.pi / 2, 0, 0)
         geometryNode.scale = SCNVector3(PLANE_SCALE, PLANE_SCALE, PLANE_SCALE)
         contentNode.addChildNode(geometryNode)
-        
+
         vertexEffectMaterial = PlaneNode.createMaterial(vertexFunctionName: "Feature2_geometryEffectVertexShader", fragmentFunctionName: "Feature2_geometryEffectFragmentShader")
         vertexEffectMaterial.setValue(SCNMaterialProperty(contents: sceneView.scene.background.contents!), forKey: "diffuseTexture")
-        
+
         super.init()
-        
+
         geometryNode.geometry!.firstMaterial = vertexEffectMaterial
     }
 
-    func update(time: TimeInterval, timeDelta: Float) {
+    func update(time: TimeInterval, timeDelta: Float, waveHeight: Float, waveFrequency: Float) {
         self.time += timeDelta
         guard let frame = sceneView.session.currentFrame else { return }
 
@@ -52,6 +52,8 @@ class PlaneNode: NSObject {
         let material = geometryNode.geometry!.firstMaterial!
         material.setValue(SCNMatrix4Invert(transform), forKey: "u_displayTransform")
         material.setValue(NSNumber(value: self.time), forKey: "u_time")
+        material.setValue(NSNumber(value: waveHeight), forKey: "u_waveHeight")
+        material.setValue(NSNumber(value: waveFrequency), forKey: "u_waveFrequency")
     }
 
     private static func createMaterial(vertexFunctionName: String, fragmentFunctionName: String) -> SCNMaterial {

@@ -7,6 +7,7 @@
 
 import ARKit
 import SceneKit
+import SnapKit
 import UIKit
 
 class Feature2_ViewController: UIViewController {
@@ -17,6 +18,14 @@ class Feature2_ViewController: UIViewController {
     private var viewFrame: CGRect?
     private var lastUpdateTime: TimeInterval?
 
+    private var waveHeight: Float = 0.25
+    private var waveFrequency: Float = 20.0
+
+    private let heightLabel = UILabel()
+    private let heightSlider = UISlider()
+    private let frequencyLabel = UILabel()
+    private let frequencySlider = UISlider()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +35,8 @@ class Feature2_ViewController: UIViewController {
 
         sceneView.delegate = self
         sceneView.automaticallyUpdatesLighting = true
-        view.addSubview(sceneView)
+
+        setupUI()
 
         viewFrame = sceneView.bounds
 
@@ -39,6 +49,62 @@ class Feature2_ViewController: UIViewController {
 
         UIApplication.shared.isIdleTimerDisabled = true
         sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
+    }
+
+    private func setupUI() {
+        view.addSubview(sceneView)
+        view.addSubview(heightLabel)
+        view.addSubview(heightSlider)
+        view.addSubview(frequencyLabel)
+        view.addSubview(frequencySlider)
+
+        sceneView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+
+        frequencySlider.minimumValue = 0.0
+        frequencySlider.maximumValue = 50.0
+        frequencySlider.setValue(20.0, animated: false)
+        frequencySlider.addTarget(self, action: #selector(changeFrequency), for: .valueChanged)
+        frequencySlider.snp.makeConstraints { make in
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(24)
+            make.leading.trailing.equalToSuperview().inset(24)
+            make.centerX.equalToSuperview()
+        }
+
+        frequencyLabel.font = .systemFont(ofSize: 15, weight: .semibold)
+        frequencyLabel.textColor = .white
+        frequencyLabel.text = "Wave frequency"
+        frequencyLabel.snp.makeConstraints { make in
+            make.leading.equalToSuperview().inset(24)
+            make.bottom.equalTo(frequencySlider.snp.top).offset(-20)
+        }
+
+        heightSlider.minimumValue = 0.0
+        heightSlider.maximumValue = 1.0
+        heightSlider.setValue(0.25, animated: false)
+        heightSlider.addTarget(self, action: #selector(changeHeight), for: .valueChanged)
+        heightSlider.snp.makeConstraints { make in
+            make.bottom.equalTo(frequencyLabel.snp.top).offset(-36)
+            make.centerX.equalToSuperview()
+            make.leading.trailing.equalToSuperview().inset(24)
+        }
+
+        heightLabel.font = .systemFont(ofSize: 15, weight: .semibold)
+        heightLabel.textColor = .white
+        heightLabel.text = "Wave height"
+        heightLabel.snp.makeConstraints { make in
+            make.bottom.equalTo(heightSlider.snp.top).offset(-20)
+            make.leading.equalToSuperview().inset(24)
+        }
+    }
+
+    @objc private func changeFrequency(_ sender: UISlider) {
+        waveFrequency = sender.value
+    }
+
+    @objc private func changeHeight(_ sender: UISlider) {
+        waveHeight = sender.value
     }
 }
 
@@ -64,7 +130,7 @@ extension Feature2_ViewController: ARSCNViewDelegate {
             planeNode!.contentNode.isHidden = !couldPlace
         }
 
-        planeNode?.update(time: time, timeDelta: delta)
+        planeNode?.update(time: time, timeDelta: delta, waveHeight: waveHeight, waveFrequency: waveFrequency)
     }
 
     private func tryPlacePlaneInWorld(planeNode: PlaneNode, screenLocation: CGPoint) -> Bool {
