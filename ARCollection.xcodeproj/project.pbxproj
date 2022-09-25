@@ -21,6 +21,9 @@
 		E7AD622B28D77666004293F2 /* SCNMatrix4+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD622A28D77666004293F2 /* SCNMatrix4+Ext.swift */; };
 		E7AD622D28D77DAE004293F2 /* Feature2_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E7AD622C28D77DAE004293F2 /* Feature2_shaders.metal */; };
 		E7AD622F28D7874E004293F2 /* SCNVectorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD622E28D7874E004293F2 /* SCNVectorHelpers.swift */; };
+		E7C8543B28E0974B0060A5A3 /* Feature3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8543A28E0974B0060A5A3 /* Feature3_ViewController.swift */; };
+		E7C8543D28E097FC0060A5A3 /* Feature3_Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8543C28E097FC0060A5A3 /* Feature3_Renderer.swift */; };
+		E7C8543F28E09AFA0060A5A3 /* Feature3_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E7C8543E28E09AFA0060A5A3 /* Feature3_shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		E7AD622A28D77666004293F2 /* SCNMatrix4+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNMatrix4+Ext.swift"; sourceTree = "<group>"; };
 		E7AD622C28D77DAE004293F2 /* Feature2_shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Feature2_shaders.metal; sourceTree = "<group>"; };
 		E7AD622E28D7874E004293F2 /* SCNVectorHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVectorHelpers.swift; sourceTree = "<group>"; };
+		E7C8543A28E0974B0060A5A3 /* Feature3_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature3_ViewController.swift; sourceTree = "<group>"; };
+		E7C8543C28E097FC0060A5A3 /* Feature3_Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature3_Renderer.swift; sourceTree = "<group>"; };
+		E7C8543E28E09AFA0060A5A3 /* Feature3_shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Feature3_shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 		E7AD61FF28D748A4004293F2 /* ARCollection */ = {
 			isa = PBXGroup;
 			children = (
+				E7C8543928E097310060A5A3 /* Feature3 */,
 				E7AD622428D77460004293F2 /* Feature2 */,
 				E7AD621E28D75258004293F2 /* Feature1 */,
 				E7AD620028D748A4004293F2 /* AppDelegate.swift */,
@@ -120,6 +127,16 @@
 				E7AD622E28D7874E004293F2 /* SCNVectorHelpers.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E7C8543928E097310060A5A3 /* Feature3 */ = {
+			isa = PBXGroup;
+			children = (
+				E7C8543A28E0974B0060A5A3 /* Feature3_ViewController.swift */,
+				E7C8543C28E097FC0060A5A3 /* Feature3_Renderer.swift */,
+				E7C8543E28E09AFA0060A5A3 /* Feature3_shaders.metal */,
+			);
+			path = Feature3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,13 +219,16 @@
 				E7AD622B28D77666004293F2 /* SCNMatrix4+Ext.swift in Sources */,
 				E7AD622D28D77DAE004293F2 /* Feature2_shaders.metal in Sources */,
 				E7AD622828D774D2004293F2 /* PlaneNode.swift in Sources */,
+				E7C8543D28E097FC0060A5A3 /* Feature3_Renderer.swift in Sources */,
 				E7AD622028D75931004293F2 /* Feature1_ViewController.swift in Sources */,
 				E7AD620528D748A4004293F2 /* RootViewController.swift in Sources */,
 				E7AD622F28D7874E004293F2 /* SCNVectorHelpers.swift in Sources */,
 				E7AD622628D7748C004293F2 /* Feature2_ViewController.swift in Sources */,
 				E7AD620128D748A4004293F2 /* AppDelegate.swift in Sources */,
 				E7AD620328D748A4004293F2 /* SceneDelegate.swift in Sources */,
+				E7C8543F28E09AFA0060A5A3 /* Feature3_shaders.metal in Sources */,
 				E7AD621A28D74B7A004293F2 /* ARDataSource.swift in Sources */,
+				E7C8543B28E0974B0060A5A3 /* Feature3_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
