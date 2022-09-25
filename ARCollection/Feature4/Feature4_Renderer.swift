@@ -121,7 +121,6 @@ class Feature4_Renderer {
     }
     
     func update() {
-        guard commandQueue != nil else { return }
         // Wait to ensure only kMaxBuffersInFlight are getting proccessed by any stage in the Metal
         //   pipeline (App, Metal, Drivers, GPU, etc)
         _ = inFlightSemaphore.wait(timeout: DispatchTime.distantFuture)
@@ -205,7 +204,6 @@ class Feature4_Renderer {
     
     // MARK: - Private
     func loadMetal() {
-        guard renderDestination.currentDrawable != nil else { return }
         // Create and load our basic Metal state objects
         
         // Set the default formats needed to render
