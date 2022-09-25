@@ -28,6 +28,7 @@ class Feature2_ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Space distortion"
 
         sceneView = ARSCNView(frame: view.bounds, options: [
             SCNView.Option.preferredRenderingAPI.rawValue: SCNRenderingAPI.metal,

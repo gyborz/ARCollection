@@ -24,6 +24,9 @@
 		E7C8543B28E0974B0060A5A3 /* Feature3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8543A28E0974B0060A5A3 /* Feature3_ViewController.swift */; };
 		E7C8543D28E097FC0060A5A3 /* Feature3_Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8543C28E097FC0060A5A3 /* Feature3_Renderer.swift */; };
 		E7C8543F28E09AFA0060A5A3 /* Feature3_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E7C8543E28E09AFA0060A5A3 /* Feature3_shaders.metal */; };
+		E7C8544228E0A1F30060A5A3 /* Feature4_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8544128E0A1F30060A5A3 /* Feature4_ViewController.swift */; };
+		E7C8544428E0A2310060A5A3 /* Feature4_Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8544328E0A2310060A5A3 /* Feature4_Renderer.swift */; };
+		E7C8544D28E0B21F0060A5A3 /* Feature4_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E7C8544628E0A3200060A5A3 /* Feature4_shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,11 @@
 		E7C8543A28E0974B0060A5A3 /* Feature3_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature3_ViewController.swift; sourceTree = "<group>"; };
 		E7C8543C28E097FC0060A5A3 /* Feature3_Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature3_Renderer.swift; sourceTree = "<group>"; };
 		E7C8543E28E09AFA0060A5A3 /* Feature3_shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Feature3_shaders.metal; sourceTree = "<group>"; };
+		E7C8544128E0A1F30060A5A3 /* Feature4_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature4_ViewController.swift; sourceTree = "<group>"; };
+		E7C8544328E0A2310060A5A3 /* Feature4_Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature4_Renderer.swift; sourceTree = "<group>"; };
+		E7C8544628E0A3200060A5A3 /* Feature4_shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Feature4_shaders.metal; sourceTree = "<group>"; };
+		E7C8544828E0A4F60060A5A3 /* ARCollection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARCollection-Bridging-Header.h"; sourceTree = "<group>"; };
+		E7C8544C28E0B0980060A5A3 /* ShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,7 @@
 		E7AD61FF28D748A4004293F2 /* ARCollection */ = {
 			isa = PBXGroup;
 			children = (
+				E7C8544028E0A1E40060A5A3 /* Feature4 */,
 				E7C8543928E097310060A5A3 /* Feature3 */,
 				E7AD622428D77460004293F2 /* Feature2 */,
 				E7AD621E28D75258004293F2 /* Feature1 */,
@@ -89,6 +98,7 @@
 				E7AD620928D748A4004293F2 /* Assets.xcassets */,
 				E7AD620B28D748A4004293F2 /* LaunchScreen.storyboard */,
 				E7AD620E28D748A4004293F2 /* Info.plist */,
+				E7C8544828E0A4F60060A5A3 /* ARCollection-Bridging-Header.h */,
 			);
 			path = ARCollection;
 			sourceTree = "<group>";
@@ -137,6 +147,17 @@
 				E7C8543E28E09AFA0060A5A3 /* Feature3_shaders.metal */,
 			);
 			path = Feature3;
+			sourceTree = "<group>";
+		};
+		E7C8544028E0A1E40060A5A3 /* Feature4 */ = {
+			isa = PBXGroup;
+			children = (
+				E7C8544128E0A1F30060A5A3 /* Feature4_ViewController.swift */,
+				E7C8544328E0A2310060A5A3 /* Feature4_Renderer.swift */,
+				E7C8544C28E0B0980060A5A3 /* ShaderTypes.h */,
+				E7C8544628E0A3200060A5A3 /* Feature4_shaders.metal */,
+			);
+			path = Feature4;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7C8544D28E0B21F0060A5A3 /* Feature4_shaders.metal in Sources */,
+				E7C8544228E0A1F30060A5A3 /* Feature4_ViewController.swift in Sources */,
 				E7AD622B28D77666004293F2 /* SCNMatrix4+Ext.swift in Sources */,
+				E7C8544428E0A2310060A5A3 /* Feature4_Renderer.swift in Sources */,
 				E7AD622D28D77DAE004293F2 /* Feature2_shaders.metal in Sources */,
 				E7AD622828D774D2004293F2 /* PlaneNode.swift in Sources */,
 				E7C8543D28E097FC0060A5A3 /* Feature3_Renderer.swift in Sources */,
@@ -371,6 +395,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARCollection/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = AR;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = microphone;
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "nearby interaction";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -380,12 +406,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/lib1/include";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gyorgyborz.ARCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ARCollection/ARCollection-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -402,6 +430,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARCollection/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = AR;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = microphone;
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "nearby interaction";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -411,12 +441,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/lib1/include";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gyorgyborz.ARCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ARCollection/ARCollection-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

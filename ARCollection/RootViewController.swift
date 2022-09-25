@@ -21,7 +21,7 @@ class RootViewController: UIViewController, UITableViewDataSource, UITableViewDe
     private func setupUI() {
         title = "Collection"
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        view.backgroundColor = .black
+        view.backgroundColor = .systemBackground
         view.addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
@@ -70,7 +70,7 @@ class FeatureCell: UITableViewCell {
         backgroundColor = .clear
         label.font = .systemFont(ofSize: 20, weight: .semibold)
         label.numberOfLines = 0
-        label.textColor = .white
+        label.textColor = .label
         contentView.addSubview(label)
         label.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview().inset(16)

@@ -18,6 +18,7 @@ class Feature3_ViewController: UIViewController, MTKViewDelegate, ARSessionDeleg
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "LiDAR and Metal"
 
         view.addSubview(mtkView)
         mtkView.snp.makeConstraints { make in
