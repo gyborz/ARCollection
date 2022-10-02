@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E777D62528E1952200E46CD7 /* Feature4_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E777D62328E194E700E46CD7 /* Feature4_shaders.metal */; };
 		E7AD620128D748A4004293F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD620028D748A4004293F2 /* AppDelegate.swift */; };
 		E7AD620328D748A4004293F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD620228D748A4004293F2 /* SceneDelegate.swift */; };
 		E7AD620528D748A4004293F2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD620428D748A4004293F2 /* RootViewController.swift */; };
@@ -26,10 +27,11 @@
 		E7C8543F28E09AFA0060A5A3 /* Feature3_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E7C8543E28E09AFA0060A5A3 /* Feature3_shaders.metal */; };
 		E7C8544228E0A1F30060A5A3 /* Feature4_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8544128E0A1F30060A5A3 /* Feature4_ViewController.swift */; };
 		E7C8544428E0A2310060A5A3 /* Feature4_Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8544328E0A2310060A5A3 /* Feature4_Renderer.swift */; };
-		E7C8544D28E0B21F0060A5A3 /* Feature4_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E7C8544628E0A3200060A5A3 /* Feature4_shaders.metal */; };
+		E7ECC4B228E8BE730036125B /* Feature5_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7ECC4B128E8BE730036125B /* Feature5_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E777D62328E194E700E46CD7 /* Feature4_shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Feature4_shaders.metal; sourceTree = "<group>"; };
 		E7AD61FD28D748A4004293F2 /* ARCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AD620028D748A4004293F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7AD620228D748A4004293F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,9 +52,9 @@
 		E7C8543E28E09AFA0060A5A3 /* Feature3_shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Feature3_shaders.metal; sourceTree = "<group>"; };
 		E7C8544128E0A1F30060A5A3 /* Feature4_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature4_ViewController.swift; sourceTree = "<group>"; };
 		E7C8544328E0A2310060A5A3 /* Feature4_Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature4_Renderer.swift; sourceTree = "<group>"; };
-		E7C8544628E0A3200060A5A3 /* Feature4_shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Feature4_shaders.metal; sourceTree = "<group>"; };
 		E7C8544828E0A4F60060A5A3 /* ARCollection-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARCollection-Bridging-Header.h"; sourceTree = "<group>"; };
 		E7C8544C28E0B0980060A5A3 /* ShaderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		E7ECC4B128E8BE730036125B /* Feature5_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature5_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		E7AD61FF28D748A4004293F2 /* ARCollection */ = {
 			isa = PBXGroup;
 			children = (
+				E7ECC4B028E8BE450036125B /* Feature5 */,
 				E7C8544028E0A1E40060A5A3 /* Feature4 */,
 				E7C8543928E097310060A5A3 /* Feature3 */,
 				E7AD622428D77460004293F2 /* Feature2 */,
@@ -152,12 +155,20 @@
 		E7C8544028E0A1E40060A5A3 /* Feature4 */ = {
 			isa = PBXGroup;
 			children = (
+				E7C8544C28E0B0980060A5A3 /* ShaderTypes.h */,
 				E7C8544128E0A1F30060A5A3 /* Feature4_ViewController.swift */,
 				E7C8544328E0A2310060A5A3 /* Feature4_Renderer.swift */,
-				E7C8544C28E0B0980060A5A3 /* ShaderTypes.h */,
-				E7C8544628E0A3200060A5A3 /* Feature4_shaders.metal */,
+				E777D62328E194E700E46CD7 /* Feature4_shaders.metal */,
 			);
 			path = Feature4;
+			sourceTree = "<group>";
+		};
+		E7ECC4B028E8BE450036125B /* Feature5 */ = {
+			isa = PBXGroup;
+			children = (
+				E7ECC4B128E8BE730036125B /* Feature5_ViewController.swift */,
+			);
+			path = Feature5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7C8544D28E0B21F0060A5A3 /* Feature4_shaders.metal in Sources */,
+				E777D62528E1952200E46CD7 /* Feature4_shaders.metal in Sources */,
 				E7C8544228E0A1F30060A5A3 /* Feature4_ViewController.swift in Sources */,
 				E7AD622B28D77666004293F2 /* SCNMatrix4+Ext.swift in Sources */,
 				E7C8544428E0A2310060A5A3 /* Feature4_Renderer.swift in Sources */,
@@ -253,6 +264,7 @@
 				E7C8543F28E09AFA0060A5A3 /* Feature3_shaders.metal in Sources */,
 				E7AD621A28D74B7A004293F2 /* ARDataSource.swift in Sources */,
 				E7C8543B28E0974B0060A5A3 /* Feature3_ViewController.swift in Sources */,
+				E7ECC4B228E8BE730036125B /* Feature5_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,7 +418,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/lib1/include";
+				MTL_HEADER_SEARCH_PATHS = "${srcroot}";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gyorgyborz.ARCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -441,7 +453,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/lib1/include";
+				MTL_HEADER_SEARCH_PATHS = "${srcroot}";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gyorgyborz.ARCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
