@@ -272,8 +272,8 @@ class Feature3_Renderer {
     func updateFrameUniforms(frame: ARFrame) {
         let uniforms = frameUniformBufferAddress.assumingMemoryBound(to: FrameUniforms.self)
 
-        uniforms.pointee.viewMatrix = frame.camera.viewMatrix(for: .landscapeRight)
-        uniforms.pointee.projectionMatrix = frame.camera.projectionMatrix(for: .landscapeRight,
+        uniforms.pointee.viewMatrix = frame.camera.viewMatrix(for: .portrait)
+        uniforms.pointee.projectionMatrix = frame.camera.projectionMatrix(for: .portrait,
                                                                           viewportSize: viewportSize,
                                                                           zNear: 0.05,
                                                                           zFar: 50)
@@ -312,7 +312,7 @@ class Feature3_Renderer {
     }
 
     func updateImagePlane(frame: ARFrame) {
-        let displayToCameraTransform = frame.displayTransform(for: .landscapeRight, viewportSize: viewportSize).inverted()
+        let displayToCameraTransform = frame.displayTransform(for: .portrait, viewportSize: viewportSize).inverted()
 
         let vertexData = imagePlaneVertexBuffer.contents().assumingMemoryBound(to: Float.self)
         for index in 0...3 {

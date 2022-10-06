@@ -18,6 +18,7 @@ struct ARDataSource {
         ARFeature(title: "2: Space distortion", controller: Feature2_ViewController()),
         ARFeature(title: "3: LiDAR and Metal", controller: Feature3_ViewController()),
         ARFeature(title: "4: Camera background replace", controller: Feature4_ViewController()),
-        ARFeature(title: "5: Multiple camera feed", controller: Feature5_ViewController())
+        ARFeature(title: "5: Multiple camera feed", controller: Feature5_ViewController()),
+        ARFeature(title: "6: LiDAR depth of field", controller: Feature6_ViewController()),
     ]
 }

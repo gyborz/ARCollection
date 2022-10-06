@@ -22,6 +22,9 @@
 		E7AD622B28D77666004293F2 /* SCNMatrix4+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD622A28D77666004293F2 /* SCNMatrix4+Ext.swift */; };
 		E7AD622D28D77DAE004293F2 /* Feature2_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E7AD622C28D77DAE004293F2 /* Feature2_shaders.metal */; };
 		E7AD622F28D7874E004293F2 /* SCNVectorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD622E28D7874E004293F2 /* SCNVectorHelpers.swift */; };
+		E7B2C64A28E9C2300022F961 /* Feature6_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B2C64928E9C2300022F961 /* Feature6_ViewController.swift */; };
+		E7B2C64C28E9C3360022F961 /* Feature6_Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B2C64B28E9C3360022F961 /* Feature6_Renderer.swift */; };
+		E7B2C64E28E9C3F20022F961 /* Feature6_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E7B2C64D28E9C3F20022F961 /* Feature6_shaders.metal */; };
 		E7C8543B28E0974B0060A5A3 /* Feature3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8543A28E0974B0060A5A3 /* Feature3_ViewController.swift */; };
 		E7C8543D28E097FC0060A5A3 /* Feature3_Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8543C28E097FC0060A5A3 /* Feature3_Renderer.swift */; };
 		E7C8543F28E09AFA0060A5A3 /* Feature3_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E7C8543E28E09AFA0060A5A3 /* Feature3_shaders.metal */; };
@@ -47,6 +50,9 @@
 		E7AD622A28D77666004293F2 /* SCNMatrix4+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNMatrix4+Ext.swift"; sourceTree = "<group>"; };
 		E7AD622C28D77DAE004293F2 /* Feature2_shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Feature2_shaders.metal; sourceTree = "<group>"; };
 		E7AD622E28D7874E004293F2 /* SCNVectorHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVectorHelpers.swift; sourceTree = "<group>"; };
+		E7B2C64928E9C2300022F961 /* Feature6_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature6_ViewController.swift; sourceTree = "<group>"; };
+		E7B2C64B28E9C3360022F961 /* Feature6_Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature6_Renderer.swift; sourceTree = "<group>"; };
+		E7B2C64D28E9C3F20022F961 /* Feature6_shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Feature6_shaders.metal; sourceTree = "<group>"; };
 		E7C8543A28E0974B0060A5A3 /* Feature3_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature3_ViewController.swift; sourceTree = "<group>"; };
 		E7C8543C28E097FC0060A5A3 /* Feature3_Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature3_Renderer.swift; sourceTree = "<group>"; };
 		E7C8543E28E09AFA0060A5A3 /* Feature3_shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Feature3_shaders.metal; sourceTree = "<group>"; };
@@ -88,6 +94,7 @@
 		E7AD61FF28D748A4004293F2 /* ARCollection */ = {
 			isa = PBXGroup;
 			children = (
+				E7B2C64828E9C21E0022F961 /* Feature6 */,
 				E7ECC4B028E8BE450036125B /* Feature5 */,
 				E7C8544028E0A1E40060A5A3 /* Feature4 */,
 				E7C8543928E097310060A5A3 /* Feature3 */,
@@ -140,6 +147,16 @@
 				E7AD622E28D7874E004293F2 /* SCNVectorHelpers.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E7B2C64828E9C21E0022F961 /* Feature6 */ = {
+			isa = PBXGroup;
+			children = (
+				E7B2C64928E9C2300022F961 /* Feature6_ViewController.swift */,
+				E7B2C64B28E9C3360022F961 /* Feature6_Renderer.swift */,
+				E7B2C64D28E9C3F20022F961 /* Feature6_shaders.metal */,
+			);
+			path = Feature6;
 			sourceTree = "<group>";
 		};
 		E7C8543928E097310060A5A3 /* Feature3 */ = {
@@ -248,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B2C64C28E9C3360022F961 /* Feature6_Renderer.swift in Sources */,
 				E777D62528E1952200E46CD7 /* Feature4_shaders.metal in Sources */,
 				E7C8544228E0A1F30060A5A3 /* Feature4_ViewController.swift in Sources */,
 				E7AD622B28D77666004293F2 /* SCNMatrix4+Ext.swift in Sources */,
@@ -260,6 +278,8 @@
 				E7AD622F28D7874E004293F2 /* SCNVectorHelpers.swift in Sources */,
 				E7AD622628D7748C004293F2 /* Feature2_ViewController.swift in Sources */,
 				E7AD620128D748A4004293F2 /* AppDelegate.swift in Sources */,
+				E7B2C64A28E9C2300022F961 /* Feature6_ViewController.swift in Sources */,
+				E7B2C64E28E9C3F20022F961 /* Feature6_shaders.metal in Sources */,
 				E7AD620328D748A4004293F2 /* SceneDelegate.swift in Sources */,
 				E7C8543F28E09AFA0060A5A3 /* Feature3_shaders.metal in Sources */,
 				E7AD621A28D74B7A004293F2 /* ARDataSource.swift in Sources */,
@@ -411,7 +431,7 @@
 				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "nearby interaction";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -446,7 +466,7 @@
 				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "nearby interaction";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
