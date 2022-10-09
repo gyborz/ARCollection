@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E74B413E28F2B0D1000BB8F1 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B413D28F2B0D1000BB8F1 /* GameManager.swift */; };
+		E74B414028F2B12E000BB8F1 /* InputSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B413F28F2B12E000BB8F1 /* InputSystem.swift */; };
+		E74B414228F2B488000BB8F1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B414128F2B488000BB8F1 /* Extensions.swift */; };
+		E74B414428F2B7A8000BB8F1 /* OSLog+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B414328F2B7A8000BB8F1 /* OSLog+Helpers.swift */; };
+		E74B414628F2F97F000BB8F1 /* Voxels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B414528F2F97F000BB8F1 /* Voxels.swift */; };
+		E74B414828F2FA17000BB8F1 /* Voxel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B414728F2FA17000BB8F1 /* Voxel.swift */; };
+		E74B414A28F2FC68000BB8F1 /* VoxelCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B414928F2FC68000BB8F1 /* VoxelCursor.swift */; };
+		E74B414C28F2FD34000BB8F1 /* ScreenBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B414B28F2FD34000BB8F1 /* ScreenBuffer.swift */; };
+		E74B414F28F2FD98000BB8F1 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74B414E28F2FD98000BB8F1 /* HelperFunctions.swift */; };
 		E7715A4328EF4191000483F3 /* Feature7_Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7715A4228EF4191000483F3 /* Feature7_Renderer.swift */; };
 		E7715A4528EF41B9000483F3 /* Feature7_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E7715A4428EF41B9000483F3 /* Feature7_shaders.metal */; };
 		E7715A4828EF424D000483F3 /* Feature7_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7715A4728EF424D000483F3 /* Feature7_ViewController.swift */; };
+		E7715A4B28EF4FAB000483F3 /* Feature8_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7715A4A28EF4FAB000483F3 /* Feature8_ViewController.swift */; };
 		E777D62528E1952200E46CD7 /* Feature4_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E777D62328E194E700E46CD7 /* Feature4_shaders.metal */; };
 		E7AD620128D748A4004293F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD620028D748A4004293F2 /* AppDelegate.swift */; };
 		E7AD620328D748A4004293F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD620228D748A4004293F2 /* SceneDelegate.swift */; };
@@ -28,6 +38,12 @@
 		E7B2C64A28E9C2300022F961 /* Feature6_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B2C64928E9C2300022F961 /* Feature6_ViewController.swift */; };
 		E7B2C64C28E9C3360022F961 /* Feature6_Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B2C64B28E9C3360022F961 /* Feature6_Renderer.swift */; };
 		E7B2C64E28E9C3F20022F961 /* Feature6_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E7B2C64D28E9C3F20022F961 /* Feature6_shaders.metal */; };
+		E7B6FA4228F205F900C99FB0 /* voxelBaseColor.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B6FA3F28F205F900C99FB0 /* voxelBaseColor.png */; };
+		E7B6FA4328F205F900C99FB0 /* voxelMetallic.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B6FA4028F205F900C99FB0 /* voxelMetallic.png */; };
+		E7B6FA4428F205F900C99FB0 /* voxelRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = E7B6FA4128F205F900C99FB0 /* voxelRoughness.png */; };
+		E7B6FA4728F2066600C99FB0 /* Voxel_Cage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E7B6FA4528F2066600C99FB0 /* Voxel_Cage.usdz */; };
+		E7B6FA4828F2066600C99FB0 /* Voxel_White.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E7B6FA4628F2066600C99FB0 /* Voxel_White.usdz */; };
+		E7B6FA4A28F2068C00C99FB0 /* VoxelEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B6FA4928F2068C00C99FB0 /* VoxelEntity.swift */; };
 		E7C8543B28E0974B0060A5A3 /* Feature3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8543A28E0974B0060A5A3 /* Feature3_ViewController.swift */; };
 		E7C8543D28E097FC0060A5A3 /* Feature3_Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C8543C28E097FC0060A5A3 /* Feature3_Renderer.swift */; };
 		E7C8543F28E09AFA0060A5A3 /* Feature3_shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = E7C8543E28E09AFA0060A5A3 /* Feature3_shaders.metal */; };
@@ -37,10 +53,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E74B413D28F2B0D1000BB8F1 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		E74B413F28F2B12E000BB8F1 /* InputSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSystem.swift; sourceTree = "<group>"; };
+		E74B414128F2B488000BB8F1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E74B414328F2B7A8000BB8F1 /* OSLog+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OSLog+Helpers.swift"; sourceTree = "<group>"; };
+		E74B414528F2F97F000BB8F1 /* Voxels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voxels.swift; sourceTree = "<group>"; };
+		E74B414728F2FA17000BB8F1 /* Voxel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voxel.swift; sourceTree = "<group>"; };
+		E74B414928F2FC68000BB8F1 /* VoxelCursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelCursor.swift; sourceTree = "<group>"; };
+		E74B414B28F2FD34000BB8F1 /* ScreenBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenBuffer.swift; sourceTree = "<group>"; };
+		E74B414E28F2FD98000BB8F1 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		E7715A4228EF4191000483F3 /* Feature7_Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature7_Renderer.swift; sourceTree = "<group>"; };
 		E7715A4428EF41B9000483F3 /* Feature7_shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Feature7_shaders.metal; sourceTree = "<group>"; };
 		E7715A4628EF41DC000483F3 /* Feature7_ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Feature7_ShaderTypes.h; sourceTree = "<group>"; };
 		E7715A4728EF424D000483F3 /* Feature7_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature7_ViewController.swift; sourceTree = "<group>"; };
+		E7715A4A28EF4FAB000483F3 /* Feature8_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature8_ViewController.swift; sourceTree = "<group>"; };
 		E777D62328E194E700E46CD7 /* Feature4_shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Feature4_shaders.metal; sourceTree = "<group>"; };
 		E7AD61FD28D748A4004293F2 /* ARCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AD620028D748A4004293F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +86,12 @@
 		E7B2C64928E9C2300022F961 /* Feature6_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature6_ViewController.swift; sourceTree = "<group>"; };
 		E7B2C64B28E9C3360022F961 /* Feature6_Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature6_Renderer.swift; sourceTree = "<group>"; };
 		E7B2C64D28E9C3F20022F961 /* Feature6_shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Feature6_shaders.metal; sourceTree = "<group>"; };
+		E7B6FA3F28F205F900C99FB0 /* voxelBaseColor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voxelBaseColor.png; sourceTree = "<group>"; };
+		E7B6FA4028F205F900C99FB0 /* voxelMetallic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voxelMetallic.png; sourceTree = "<group>"; };
+		E7B6FA4128F205F900C99FB0 /* voxelRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voxelRoughness.png; sourceTree = "<group>"; };
+		E7B6FA4528F2066600C99FB0 /* Voxel_Cage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Voxel_Cage.usdz; sourceTree = "<group>"; };
+		E7B6FA4628F2066600C99FB0 /* Voxel_White.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Voxel_White.usdz; sourceTree = "<group>"; };
+		E7B6FA4928F2068C00C99FB0 /* VoxelEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoxelEntity.swift; sourceTree = "<group>"; };
 		E7C8543A28E0974B0060A5A3 /* Feature3_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature3_ViewController.swift; sourceTree = "<group>"; };
 		E7C8543C28E097FC0060A5A3 /* Feature3_Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature3_Renderer.swift; sourceTree = "<group>"; };
 		E7C8543E28E09AFA0060A5A3 /* Feature3_shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Feature3_shaders.metal; sourceTree = "<group>"; };
@@ -82,6 +114,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E74B414D28F2FD8B000BB8F1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E74B414128F2B488000BB8F1 /* Extensions.swift */,
+				E74B414328F2B7A8000BB8F1 /* OSLog+Helpers.swift */,
+				E74B414E28F2FD98000BB8F1 /* HelperFunctions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		E7715A4128EF4133000483F3 /* Feature7 */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +133,22 @@
 				E7715A4628EF41DC000483F3 /* Feature7_ShaderTypes.h */,
 			);
 			path = Feature7;
+			sourceTree = "<group>";
+		};
+		E7715A4928EF4F56000483F3 /* Feature8 */ = {
+			isa = PBXGroup;
+			children = (
+				E7B6FA3C28F205CC00C99FB0 /* assets */,
+				E7715A4A28EF4FAB000483F3 /* Feature8_ViewController.swift */,
+				E7B6FA4928F2068C00C99FB0 /* VoxelEntity.swift */,
+				E74B413D28F2B0D1000BB8F1 /* GameManager.swift */,
+				E74B413F28F2B12E000BB8F1 /* InputSystem.swift */,
+				E74B414528F2F97F000BB8F1 /* Voxels.swift */,
+				E74B414728F2FA17000BB8F1 /* Voxel.swift */,
+				E74B414928F2FC68000BB8F1 /* VoxelCursor.swift */,
+				E74B414B28F2FD34000BB8F1 /* ScreenBuffer.swift */,
+			);
+			path = Feature8;
 			sourceTree = "<group>";
 		};
 		E7AD61F428D748A4004293F2 = {
@@ -112,6 +170,7 @@
 		E7AD61FF28D748A4004293F2 /* ARCollection */ = {
 			isa = PBXGroup;
 			children = (
+				E7715A4928EF4F56000483F3 /* Feature8 */,
 				E7715A4128EF4133000483F3 /* Feature7 */,
 				E7B2C64828E9C21E0022F961 /* Feature6 */,
 				E7ECC4B028E8BE450036125B /* Feature5 */,
@@ -123,6 +182,7 @@
 				E7AD620228D748A4004293F2 /* SceneDelegate.swift */,
 				E7AD620428D748A4004293F2 /* RootViewController.swift */,
 				E7AD621928D74B7A004293F2 /* ARDataSource.swift */,
+				E74B414D28F2FD8B000BB8F1 /* Utilities */,
 				E7AD622128D75A24004293F2 /* Resources */,
 				E7AD620928D748A4004293F2 /* Assets.xcassets */,
 				E7AD620B28D748A4004293F2 /* LaunchScreen.storyboard */,
@@ -176,6 +236,34 @@
 				E7B2C64D28E9C3F20022F961 /* Feature6_shaders.metal */,
 			);
 			path = Feature6;
+			sourceTree = "<group>";
+		};
+		E7B6FA3C28F205CC00C99FB0 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E7B6FA3E28F205E600C99FB0 /* Models */,
+				E7B6FA3D28F205D900C99FB0 /* Textures */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		E7B6FA3D28F205D900C99FB0 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				E7B6FA3F28F205F900C99FB0 /* voxelBaseColor.png */,
+				E7B6FA4028F205F900C99FB0 /* voxelMetallic.png */,
+				E7B6FA4128F205F900C99FB0 /* voxelRoughness.png */,
+			);
+			path = Textures;
+			sourceTree = "<group>";
+		};
+		E7B6FA3E28F205E600C99FB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E7B6FA4528F2066600C99FB0 /* Voxel_Cage.usdz */,
+				E7B6FA4628F2066600C99FB0 /* Voxel_White.usdz */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E7C8543928E097310060A5A3 /* Feature3 */ = {
@@ -271,9 +359,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B6FA4328F205F900C99FB0 /* voxelMetallic.png in Resources */,
 				E7AD622328D75A30004293F2 /* sample_320x240.mp4 in Resources */,
+				E7B6FA4828F2066600C99FB0 /* Voxel_White.usdz in Resources */,
+				E7B6FA4228F205F900C99FB0 /* voxelBaseColor.png in Resources */,
 				E7AD620D28D748A4004293F2 /* LaunchScreen.storyboard in Resources */,
 				E7AD620A28D748A4004293F2 /* Assets.xcassets in Resources */,
+				E7B6FA4728F2066600C99FB0 /* Voxel_Cage.usdz in Resources */,
+				E7B6FA4428F205F900C99FB0 /* voxelRoughness.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B6FA4A28F2068C00C99FB0 /* VoxelEntity.swift in Sources */,
 				E7B2C64C28E9C3360022F961 /* Feature6_Renderer.swift in Sources */,
 				E7715A4528EF41B9000483F3 /* Feature7_shaders.metal in Sources */,
 				E777D62528E1952200E46CD7 /* Feature4_shaders.metal in Sources */,
@@ -292,21 +386,31 @@
 				E7C8544428E0A2310060A5A3 /* Feature4_Renderer.swift in Sources */,
 				E7AD622D28D77DAE004293F2 /* Feature2_shaders.metal in Sources */,
 				E7AD622828D774D2004293F2 /* PlaneNode.swift in Sources */,
+				E74B414C28F2FD34000BB8F1 /* ScreenBuffer.swift in Sources */,
 				E7C8543D28E097FC0060A5A3 /* Feature3_Renderer.swift in Sources */,
 				E7AD622028D75931004293F2 /* Feature1_ViewController.swift in Sources */,
 				E7AD620528D748A4004293F2 /* RootViewController.swift in Sources */,
+				E74B414F28F2FD98000BB8F1 /* HelperFunctions.swift in Sources */,
 				E7AD622F28D7874E004293F2 /* SCNVectorHelpers.swift in Sources */,
 				E7AD622628D7748C004293F2 /* Feature2_ViewController.swift in Sources */,
+				E74B414628F2F97F000BB8F1 /* Voxels.swift in Sources */,
 				E7AD620128D748A4004293F2 /* AppDelegate.swift in Sources */,
 				E7B2C64A28E9C2300022F961 /* Feature6_ViewController.swift in Sources */,
 				E7B2C64E28E9C3F20022F961 /* Feature6_shaders.metal in Sources */,
 				E7715A4328EF4191000483F3 /* Feature7_Renderer.swift in Sources */,
 				E7AD620328D748A4004293F2 /* SceneDelegate.swift in Sources */,
+				E7715A4B28EF4FAB000483F3 /* Feature8_ViewController.swift in Sources */,
+				E74B414428F2B7A8000BB8F1 /* OSLog+Helpers.swift in Sources */,
 				E7C8543F28E09AFA0060A5A3 /* Feature3_shaders.metal in Sources */,
+				E74B414828F2FA17000BB8F1 /* Voxel.swift in Sources */,
+				E74B414A28F2FC68000BB8F1 /* VoxelCursor.swift in Sources */,
 				E7715A4828EF424D000483F3 /* Feature7_ViewController.swift in Sources */,
 				E7AD621A28D74B7A004293F2 /* ARDataSource.swift in Sources */,
 				E7C8543B28E0974B0060A5A3 /* Feature3_ViewController.swift in Sources */,
 				E7ECC4B228E8BE730036125B /* Feature5_ViewController.swift in Sources */,
+				E74B414028F2B12E000BB8F1 /* InputSystem.swift in Sources */,
+				E74B413E28F2B0D1000BB8F1 /* GameManager.swift in Sources */,
+				E74B414228F2B488000BB8F1 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
